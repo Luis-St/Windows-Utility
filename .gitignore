@@ -1,0 +1,14 @@
+### C# ####
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+
+### User Configuration ####
+*.suo
+*.user
+*.sln.docstates
+
+### Rider ###
+.idea/
