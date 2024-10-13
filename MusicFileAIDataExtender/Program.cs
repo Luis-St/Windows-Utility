@@ -30,8 +30,7 @@ static void UpdateMusicFiles() {
 				continue;
 			}
 			
-			using var stream = new FileStream(musicFile, FileMode.Open, FileAccess.ReadWrite);
-			var audio = TagLib.File.Create(new StreamFileAbstraction(musicFile, stream, stream));
+			var audio = TagLib.File.Create(musicFile);
 			Console.WriteLine($"Updating genres for {song.Artist} - {song.Title} -> {string.Join(", ", song.Genres.ToArray())}");
 			audio.Tag.Genres = song.Genres.Distinct().ToArray();
 			audio.Save();
@@ -77,8 +76,7 @@ static List<FileInfo> GetMusicFiles(char letter) {
 }
 
 static bool HasGenres(FileInfo file) {
-	using var stream = new FileStream(file.FullName, FileMode.Open, FileAccess.ReadWrite);
-	var audio = TagLib.File.Create(new StreamFileAbstraction(file.FullName, stream, stream));
+	var audio = TagLib.File.Create(file.FullName);
 	return audio.Tag.Genres.Length > 0;
 }
 #endregion

@@ -26,8 +26,7 @@ static bool HasNoDuplicates() {
 
 static void FixAlbumArtist() {
 	foreach (var file in GetMusicFiles()) {
-		using var stream = new FileStream(file.FullName, FileMode.Open, FileAccess.ReadWrite);
-		var audio = TagLib.File.Create(new StreamFileAbstraction(file.FullName, stream, stream));
+		var audio = TagLib.File.Create(file.FullName);
 		if (audio.Tag.AlbumArtists.Length != 0) {
 			continue;
 		}

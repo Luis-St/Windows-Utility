@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="TagLib.Audio" Version="1.1.0" />
+      <PackageReference Include="TagLibSharp" Version="2.3.0" />
     </ItemGroup>
 
 </Project>
