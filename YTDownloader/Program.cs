@@ -9,7 +9,7 @@ Console.WriteLine("Enter playlist url: https://www.youtube.com/playlist?list=PL8
 var url = "https://www.youtube.com/playlist?list=PL8i73892gT1rqHX-cZ9ZRDqGP8YWGylqB";
 
 Console.Write(@"Enter output folder, press enter to use the music folder: D:\Temp\Out");
-var input = @"D:\Temp\Out";
+const string input = @"D:\Temp\Out";
 var folder = string.IsNullOrWhiteSpace(input) ? Environment.GetFolderPath(Environment.SpecialFolder.MyMusic) : input;
 Console.WriteLine();
 

@@ -1,6 +1,4 @@
-﻿using TagLib;
-
-try {
+﻿try {
 	if (HasNoDuplicates()) {
 		FixAlbumArtist();
 	} else {
