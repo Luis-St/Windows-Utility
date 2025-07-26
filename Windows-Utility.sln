@@ -2,13 +2,13 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCreationDateSetter", "FileCreationDateSetter\FileCreationDateSetter.csproj", "{0AE0A233-2C0C-412D-89AA-17C08AF0675A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YTDownloader", "YTDownloader\YTDownloader.csproj", "{6AE4F53E-64CB-45CF-8B7B-5B54D714ADE2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicFileDetailUpdater", "MusicFileDetailUpdater\MusicFileDetailUpdater.csproj", "{1A53A935-82ED-48FC-BE96-012724D95826}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicFileAIDataExtender", "MusicFileAIDataExtender\MusicFileAIDataExtender.csproj", "{FE0E0E77-AA2A-4570-98F3-FA5890A19D17}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{7B595BDF-5A7B-436D-94FB-CABD49F7199A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YTDownloader", "YTDownloader\YTDownloader.csproj", "{FDED1FAB-26A0-49F2-9C29-52FC99430379}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +20,6 @@ Global
 		{0AE0A233-2C0C-412D-89AA-17C08AF0675A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AE0A233-2C0C-412D-89AA-17C08AF0675A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AE0A233-2C0C-412D-89AA-17C08AF0675A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AE4F53E-64CB-45CF-8B7B-5B54D714ADE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AE4F53E-64CB-45CF-8B7B-5B54D714ADE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AE4F53E-64CB-45CF-8B7B-5B54D714ADE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AE4F53E-64CB-45CF-8B7B-5B54D714ADE2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A53A935-82ED-48FC-BE96-012724D95826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A53A935-82ED-48FC-BE96-012724D95826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A53A935-82ED-48FC-BE96-012724D95826}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,5 +32,9 @@ Global
 		{7B595BDF-5A7B-436D-94FB-CABD49F7199A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B595BDF-5A7B-436D-94FB-CABD49F7199A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B595BDF-5A7B-436D-94FB-CABD49F7199A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDED1FAB-26A0-49F2-9C29-52FC99430379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDED1FAB-26A0-49F2-9C29-52FC99430379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDED1FAB-26A0-49F2-9C29-52FC99430379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDED1FAB-26A0-49F2-9C29-52FC99430379}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

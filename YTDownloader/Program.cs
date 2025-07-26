@@ -1,16 +1,12 @@
 ﻿using YoutubeExplode;
 using YoutubeExplode.Converter;
-using System;
-using System.IO;
-using System.Linq;
+
+const string folder = @"/tmp/out";
+const string url = "https://www.youtube.com/playlist?list=PL8i73892gT1rqHX-cZ9ZRDqGP8YWGylqB";
 
 var yt = new YoutubeClient();
-Console.WriteLine("Enter playlist url: https://www.youtube.com/playlist?list=PL8i73892gT1rqHX-cZ9ZRDqGP8YWGylqB");
-var url = "https://www.youtube.com/playlist?list=PL8i73892gT1rqHX-cZ9ZRDqGP8YWGylqB";
-
-Console.Write(@"Enter output folder, press enter to use the music folder: D:\Temp\Out");
-const string input = @"D:\Temp\Out";
-var folder = string.IsNullOrWhiteSpace(input) ? Environment.GetFolderPath(Environment.SpecialFolder.MyMusic) : input;
+Console.WriteLine($"Enter playlist url: {url}");
+Console.Write($"Enter output folder, press enter to use the music folder: {folder}");
 Console.WriteLine();
 
 await foreach (var video in yt.Playlists.GetVideosAsync(url)) {
@@ -18,7 +14,7 @@ await foreach (var video in yt.Playlists.GetVideosAsync(url)) {
 		var title = string.Join(" ", video.Title.Split(GetInvalidChars())).Trim();
 		Console.Write(title);
 
-		await yt.Videos.DownloadAsync(video.Url, @$"{folder}\{title}.mp3", progress: new Progress<double>(d => {
+		await yt.Videos.DownloadAsync(video.Url, @$"{folder}/{title}.mp3", progress: new Progress<double>(d => {
 			var percent = (int)(d * 10);
 			Console.Write($"\r{title} [{new string('#', percent)}{new string(' ', 10 - percent)}] {(int)(d * 100)}%");
 		}));
