@@ -40,7 +40,7 @@ static void FixAlbumArtist() {
 }
 
 static List<FileInfo> GetMusicFiles() {
-	var root = new DirectoryInfo("D:/Musik");
+	var root = new DirectoryInfo("/home/luis/Music");
 	return root.GetFiles("*.mp3", SearchOption.AllDirectories).ToList();
 }
 

@@ -1,7 +1,7 @@
 ﻿using YoutubeExplode;
 using YoutubeExplode.Converter;
 
-const string folder = @"/tmp/out";
+const string folder = @"/home/luis/.tmp/out";
 const string url = "https://www.youtube.com/playlist?list=PL8i73892gT1rqHX-cZ9ZRDqGP8YWGylqB";
 
 var yt = new YoutubeClient();
