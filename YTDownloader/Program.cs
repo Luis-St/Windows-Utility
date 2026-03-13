@@ -2,7 +2,7 @@
 using YoutubeExplode.Converter;
 
 // Classify command:
-// Genre, 13 = Pop, 18 = Techno
+// Genre: Pop = 13, Techno = 18, Rap = 15
 // id3v2 --genre '<genre>' --TPE2 '<interpret>' '<file>'
 
 const string folder = @"/home/luis/.tmp/out";
