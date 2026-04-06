@@ -1,10 +1,6 @@
 ﻿using YoutubeExplode;
 using YoutubeExplode.Converter;
 
-// Classify command:
-// Genre: Pop = 13, Techno = 18, Rap = 15
-// id3v2 --genre '<genre>' --TPE2 '<interpret>' '<file>'
-
 const string folder = @"/home/luis/.tmp/out";
 const string url = "https://www.youtube.com/playlist?list=PL8i73892gT1rqHX-cZ9ZRDqGP8YWGylqB";
 

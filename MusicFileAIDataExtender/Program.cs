@@ -11,6 +11,12 @@ GetAiTasks();
 static void GetAiTasks() {
 	var ignoredFiles = GetIgnoredFiles();
 	
+	Console.WriteLine("Genres: ");
+	Console.WriteLine(" - Pop: 13");
+	Console.WriteLine(" - Rap: 15");
+	Console.WriteLine(" - Techno: 18");
+	Console.WriteLine();
+	
 	for (var i = 0; i < 26; i++) {
 		var c = (char) ('A' + i);
 		
@@ -21,7 +27,8 @@ static void GetAiTasks() {
 
 			var name = Path.GetFileNameWithoutExtension(musicFile.Name);
 			var albumArtist = musicFile.Directory?.Name;
-			Console.WriteLine($"{musicFile.FullName}");
+			
+			Console.WriteLine($"id3v2 --genre '13' --TPE2 '{Path.GetFileName(Path.GetDirectoryName(musicFile.FullName))}' '{musicFile.FullName}'");
 		}
 	}
 }
